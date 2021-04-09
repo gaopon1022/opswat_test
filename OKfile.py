@@ -9,11 +9,11 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 parser = argparse.ArgumentParser(description='Get the new license and apply it to your vthunder')
-parser.add_argument('-u', '--glm_username', help='the username for login to your GLM account.)
-parser.add_argument('-p', '--glm_password', help='the password for login to your GLM account.)
-parser.add_argument('-H', '--a10_host', help='the IP address for login to your vthunder.)
-parser.add_argument('-U', '--a10_username', help='the username for login to your vthunder.)
-parser.add_argument('-P', '--a10_password', help='the password for login to your vthunder.)
+parser.add_argument('-u', '--glm_username', help='the username for login to your GLM account.')
+parser.add_argument('-p', '--glm_password', help='the password for login to your GLM account.')
+parser.add_argument('-H', '--a10_host', help='the IP address for login to your vthunder.')
+parser.add_argument('-U', '--a10_username', help='the username for login to your vthunder.')
+parser.add_argument('-P', '--a10_password', help='the password for login to your vthunder.')
 
 try:
     args = parser.parse_args()
